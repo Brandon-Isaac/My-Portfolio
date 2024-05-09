@@ -3,11 +3,17 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://Brandon-Isaac.github.io/my-portfolio",
   "scripts": {
+    "start": "parcel",
+    "build-gh": "parcel build --public-url 'https://Brandon-Isaac.github.io/my-portfolio'",
+    "predeploy": "npm run build-gh",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
+
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -21,6 +27,7 @@
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
+    "gh-pages": "^6.1.1",
     "vite": "^5.2.0"
   }
 }
