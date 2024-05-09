@@ -3,17 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Brandon-Isaac.github.io/my-portfolio",
+  "homepage": "https://brandon-isaac.github.io/My-Portfolio/",
   "scripts": {
-    "start": "parcel",
-    "build-gh": "parcel build --public-url 'https://Brandon-Isaac.github.io/my-portfolio'",
-    "predeploy": "npm run build-gh",
-    "deploy": "gh-pages -d dist",
     "dev": "vite",
+    "predeploy":"npm run dev",
+    "deploy": "gh-pages -d build",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
-
   },
   "dependencies": {
     "react": "^18.2.0",
